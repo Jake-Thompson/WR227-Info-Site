@@ -1,6 +1,7 @@
 rules {
     border: 2px solid gold;
     display: block;
+    padding: 10px;
 }
 
 main {
@@ -12,7 +13,7 @@ body {
 .head {
     margin: 0px;
 background-color:rgba(127,17,70,1);
-background-image:url(https://ssl.gstatic.com/atari/images/simple-header-blended-small.png);
+background-image:url(https://ssl.gstatic.com/atari/images/simple-header-blended.png);
 font-family: Lato, sans-serif;
 color:rgba(255,255,255,0.8700000048);
 /* height:200px; */
