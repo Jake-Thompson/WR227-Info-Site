@@ -1,0 +1,100 @@
+rules {
+    border: 2px solid gold;
+    display: block;
+}
+
+main {
+    margin: 8px; 
+}
+body {
+    margin: 0;
+}
+.head {
+    margin: 0px;
+background-color:rgba(127,17,70,1);
+background-image:url(https://ssl.gstatic.com/atari/images/simple-header-blended-small.png);
+font-family: Lato, sans-serif;
+color:rgba(255,255,255,0.8700000048);
+/* height:200px; */
+background-size:cover;
+/* display: block; */
+display: flex; justify-content: space-between
+}
+.title {
+    padding: 10px;
+}
+/* .head::before {
+background-color: rgba(33,33,33,1);
+opacity: 0.4;
+} */
+.menu a {
+    color:inherit;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    
+}
+.menu a:hover {
+    background-color: rgba(33,33,33,.4);
+}
+.menu:not(.menu-sub-list){
+    margin: 0;
+    padding-left: 0;
+}
+.menu-main {
+    list-style: none;
+}
+.menu-main>li {
+    display: inline-block;
+}
+.menu-sub {
+    display: none;
+    
+    /* background-size:100vw; */
+    background-color:rgba(127,17,70,1);
+    /* opacity: .5; */
+    background-image:url(https://ssl.gstatic.com/atari/images/simple-header-blended-small.png);
+}
+li:hover > .menu-sub {
+    display: block;
+    position: absolute;
+}
+.menu-sub {
+    list-style: none;
+}
+.menu-sub > li {
+    display: block;
+}
+/* .menu-sub-list{
+    
+} */
+/* .menu-sub > li:has(>.menu-sub-list) > a {
+    border-bottom: 1px solid darkred;
+} */
+.menu-sub > li{
+    
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+/* .menu-sub{
+    
+    border: 1px solid darkred;
+} */
+.menu-sub-list > li {
+    border-top: none;
+    border-right: none;
+}
+.menu-sub-list > li:last-of-type {
+    border-bottom: none;
+}
+/* li {
+    border: 1px solid darkred;
+} */
+/* .menu-main >li {
+    border: none;
+} */
+.menu-main>li>div {
+    /* padding: 10px; */
+    margin: 0px;
+}
