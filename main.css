@@ -13,7 +13,7 @@ body {
 .head {
     margin: 0px;
 background-color:rgba(127,17,70,1);
-background-image:url(https://ssl.gstatic.com/atari/images/simple-header-blended.png);
+background-image:url(imgs/simple-header-blended.png);
 font-family: Lato, sans-serif;
 color:rgba(255,255,255,0.8700000048);
 /* height:200px; */
