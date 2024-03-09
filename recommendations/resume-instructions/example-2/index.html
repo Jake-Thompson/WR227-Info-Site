@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            %pages% | Informational Website | Jake Thompson
+        </title>
+        <base href='/WR227-Info-Site/'>
+        <link rel="stylesheet" href="main.css">
+        <script src="main.js"></script>
+        <script src="page-nav.js"></script>
+        <style>
+            #content {
+                margin-top: -8px;
+                h2 {
+                    text-align: center;
+                }
+                h4 {
+                    font-size:medium;
+                }
+                p,div {
+                    margin-left: 2em;
+                }
+                p.contact {
+                    text-align: center;
+                }
+                p:first-of-type>span:not(:first-of-type) {
+                    margin-left: 1em;
+                }
+                p:first-of-type>span:not(:last-of-type) {
+                    margin-right: 1em;
+                }
+                ul:not(.skill-list) {
+                    margin-left: 2em;
+                }
+                
+            }
+        </style>
+    </head>
+    <body>
+        <section id="content">
+        <h2>John Something</h2>
+        <p class="contact"><span>aJohnSomething@gmail.com</span>|<span>(504) 555-5555</span>|<span>Somewheresville, SomeState, 9####</span></p>
+        <hr>
+        <h4>Resume Objective</h4>
+            <p>Highly driven recent computer science graduate seeking a full-time position in software development where I can apply my knowledge of software design to help your organization produce products that impress your clients.</p>
+        <h4>Education</h4>
+        <p>BS in Computer Science at SomeUniversity of ThisState
+        <h4>Certifications</h4>
+        <p>Got ThisCertification for ThisThing.
+        <h4>Skills</h4>
+            <p>Code Languages</p>
+            <ul>
+                <li>ThisLang
+                <li>Python 
+                <li>C++
+                <li>Java
+            </ul>
+            <p>Other Skills</p>
+            <ul>
+                <li>ASkill
+                <li>ThatSkill
+            </ul>
+        
+        <h4>Portfolio Projects</h4>
+        <ul class="skill-list">
+            <li>Contributed to ProjectA on GitHub. Contributed this, that and also some of this. https://github.com/ProjectA
+            <li>Created ThisProject that does such thing. https://linktoproject
+        </ul>
+        </section>
+    </body>
+</html>
