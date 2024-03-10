@@ -9,6 +9,39 @@
         <link rel="stylesheet" href="main.css">
         <script src="main.js"></script>
         <script src="page-nav.js"></script>
+    <script>
+        // console.log(document.location.hash)
+        // if (document.location.hash) {
+        //     document.location.hash = null
+        //     waitForElm(document.location.hash).then(el => {
+        //         highlightElm(el)
+        //     })
+        // }
+        var highlightedElm
+        function highlightElmId(elmId) {
+            highlightElm(document.querySelector(elmId))
+        }
+        function highlightElm(elm) {
+            if (highlightedElm) highlightedElm.style.removeProperty('background-color')
+            if (elm) elm.style.backgroundColor = 'yellow'
+            highlightedElm = elm
+            window.addEventListener('popstate', function(event) {
+                history.replaceState({},"", window.location.href.split('#')[0]);
+                window.addEventListener('popstate', function(event) {
+                    highlightElm()
+                })
+            },{ once: true })
+        }
+        // window.addEventListener('popstate', function(event)
+        // {
+        //     console.log(document.location.hash)
+        // if (document.location.hash) {
+        //     highlightElmId(document.location.hash)
+        // } else {
+        //     highlightElm()
+        // }
+        // });
+    </script>
     </head>
     <body>
         <rules>
