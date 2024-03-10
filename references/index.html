@@ -9,6 +9,27 @@
         <link rel="stylesheet" href="main.css">
         <script src="main.js"></script>
         <script src="page-nav.js"></script>
+        <style>
+            cite {
+            break-inside: avoid;
+            counter-increment: reference;
+            display: block;
+            font-style: normal;
+            margin-left: 2.5em;
+            position: relative;
+            text-align: left;
+            margin-bottom: 1ex;
+            }
+            cite::before {
+            content: "[" counter(reference) "]";
+            display: inline-block;
+            margin-left: -2.5em;
+            position: absolute;
+            }
+            cite a {
+                text-decoration: none;
+            }
+        </style>
     </head>
     <body>
         <rules>
@@ -16,6 +37,45 @@
             Use an established style such as MLA, APA, etc. to list all sources (refer to Ch. 5 in the textbook).
             Include links when available.
         </rules>
+        <note>use IEEE</note>
+        <note>maybe put anotated as seperate page</note>
+        <cite>[; What is software development?; IBM; https://www.ibm.com/topics/software-development; 2024-02-10]</cite>
+        <cite>[;Software developers, Quality Assurance Analysts, and testers : Occupational outlook handbook; U.S. Bureau of Labor Statistics; https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm; Feb. 10, 2024]</cite>
+        <cite>[Indeed Editorial Team; The differences between a software developer and a software engineer ...; Indeed; https://www.indeed.com/career-advice/finding-a-job/developer-vs-engineer; Feb. 3, 2024]</cite>
+        <cite>[Indeed Editorial Team; Software developer resume examples and template for ...; Indeed; https://www.indeed.com/career-advice/resume-samples/software-developer; Feb. 3, 2024]</cite>
+        <script>
+            for (let cite of document.querySelectorAll('cite')) {
+                if (cite.textContent.trim().startsWith('[')) {
+                    let author,page,site,url,accessed
+                    [author,page,site,url,accessed] = cite.textContent.trim().slice(1,-1).split(';').map(x=>x.trim())
+                    let out = ''
+                    let outA = '' 
+                    let out2=''
+                    if (author) out += author+', '
+                    if (page) out += '“'+page+',” '
+                    if (site) out += site+', '
+                    if (url) {
+                        outA = document.createElement('a')
+                        outA.href = url
+                        outA.target = "_blank"
+                        outA.textContent = url
+                    }
+                    if (accessed) {
+                        
+                        let date = new Date(Date.parse(accessed))
+                        // date.y
+                        
+                        // let y,m,d
+                        // [y,m,d] = accessed.split('-')
+                        // dat
+                        out2 = ` (accessed ${date.toLocaleDateString('en-us',{month:'short'})}. ${date.toLocaleDateString('en-us',{day:'numeric'})}, ${date.toLocaleDateString('en-us',{year:'numeric'})}).`
+                        
+                    }
+                    cite.replaceChildren(out,outA,out2)
+                }
+            }
+        </script>
+    </ol>
     </body>
     
 </html>
