@@ -2,6 +2,26 @@ rules {
     border: 2px solid gold;
     display: block;
     padding: 10px;
+    margin-bottom: 10px;
+}
+rules::first-line {
+    font-weight:600;
+}
+
+note {
+    border: 2px solid rgb(0, 110, 255);
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+note::before {
+    display: inline-block;
+    content: 'Note:';
+    margin-right: 5px;
+    height: 100%;
+    vertical-align: top;
+    color: rgb(2, 35, 78);
 }
 
 main {
