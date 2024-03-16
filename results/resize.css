@@ -1,0 +1,8 @@
+.resize-container {
+    overflow:hidden
+}
+
+.resize-content {
+    transform-origin:right top;
+}
+
