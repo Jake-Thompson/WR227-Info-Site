@@ -39,7 +39,12 @@ color:rgba(255,255,255,0.8700000048);
 /* height:200px; */
 background-size:cover;
 /* display: block; */
-display: flex; justify-content: space-between
+display: flex; justify-content: space-between;
+
+}
+header {
+    position: sticky;
+    top: 0px;
 }
 .title {
     padding: 10px;
@@ -118,4 +123,20 @@ li:hover > .menu-sub {
 .menu-main>li>div {
     /* padding: 10px; */
     margin: 0px;
+}
+
+figure {
+    border-color: cornflowerblue;
+    padding: 10px;
+    float: right;
+    border-width: 2px;
+    border-style: solid;
+    margin: 10px;
+}
+figcaption {
+    color:darkblue;
+                border-bottom: 2px solid cornflowerblue;
+                display: block;
+                padding-bottom: 5px;
+                margin-bottom: 5px;
 }
