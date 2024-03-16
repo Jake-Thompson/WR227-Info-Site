@@ -1,6 +1,7 @@
 rules {
     border: 2px solid gold;
-    display: block;
+    /* display: block; */
+    display: none;
     padding: 10px;
     margin-bottom: 10px;
 }
