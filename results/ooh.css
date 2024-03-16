@@ -1,0 +1,198 @@
+@font-face {
+    font-family: Source Sans Pro Web;
+    font-style: normal;
+    font-weight: 300;
+    font-display: fallback;
+    src: url(fonts/source-sans-pro/sourcesanspro-light-webfont.woff2) format("woff2"), url(fonts/source-sans-pro/sourcesanspro-light-webfont.woff) format("woff"), url(fonts/source-sans-pro/sourcesanspro-light-webfont.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: Source Sans Pro Web;
+    font-style: normal;
+    font-weight: 400;
+    font-display: fallback;
+    src: url(fonts/source-sans-pro/sourcesanspro-regular-webfont.woff2) format("woff2"), url(fonts/source-sans-pro/sourcesanspro-regular-webfont.woff) format("woff"), url(fonts/source-sans-pro/sourcesanspro-regular-webfont.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: Source Sans Pro Web;
+    font-style: normal;
+    font-weight: 700;
+    font-display: fallback;
+    src: url(fonts/source-sans-pro/sourcesanspro-bold-webfont.woff2) format("woff2"), url(fonts/source-sans-pro/sourcesanspro-bold-webfont.woff) format("woff"), url(fonts/source-sans-pro/sourcesanspro-bold-webfont.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: Source Sans Pro Web;
+    font-style: italic;
+    font-weight: 300;
+    font-display: fallback;
+    src: url(fonts/source-sans-pro/sourcesanspro-lightitalic-webfont.woff2) format("woff2"), url(fonts/source-sans-pro/sourcesanspro-lightitalic-webfont.woff) format("woff"), url(fonts/source-sans-pro/sourcesanspro-lightitalic-webfont.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: Source Sans Pro Web;
+    font-style: italic;
+    font-weight: 400;
+    font-display: fallback;
+    src: url(fonts/source-sans-pro/sourcesanspro-italic-webfont.woff2) format("woff2"), url(fonts/source-sans-pro/sourcesanspro-italic-webfont.woff) format("woff"), url(fonts/source-sans-pro/sourcesanspro-italic-webfont.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: Source Sans Pro Web;
+    font-style: italic;
+    font-weight: 700;
+    font-display: fallback;
+    src: url(fonts/source-sans-pro/sourcesanspro-bolditalic-webfont.woff2) format("woff2"), url(fonts/source-sans-pro/sourcesanspro-bolditalic-webfont.woff) format("woff"), url(fonts/source-sans-pro/sourcesanspro-bolditalic-webfont.ttf) format("truetype");
+}
+
+table.ooh-tab-table {
+    font: 87% Source Sans Pro Web, sans-serif !important;
+
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: gray;
+
+    line-height: 1.5;
+
+    margin: 0 !important;
+    min-width: auto !important;
+
+    width: inherit;
+
+    border-collapse: collapse;
+    empty-cells: show;
+    margin: 0 0 2em 3em;
+    min-width: 415px;
+
+    background: #E8E8E8;
+}
+
+table.ooh-tab-table tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+table.ooh-tab-table tr.odd {
+    background-color: #E0E9F8;
+}
+
+.ooh-chart {
+    font: 87% Source Sans Pro Web, sans-serif !important;
+    background: #E8E8E8;
+}
+
+.ooh-chart * {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+.ooh-chart {
+    padding-left: 15px;
+    float: right;
+    background-color: #fff;
+    /* body * */
+    line-height: 1.5;
+    /* * */
+    margin: 0;
+    /* div */
+    display: block;
+
+    div {
+        display: block;
+    }
+    /* body */
+    font: 87% Source Sans Pro Web, sans-serif !important;
+
+}
+.ooh-chart > div {
+    width: 440px;
+    height: auto;
+    border: 1px solid #ccc;
+    font-size: 120% !important;
+    font-family: Helvetica, Arial, sans-serif;
+    padding-left: 15px;
+}
+
+.ooh-chart h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: none;
+    margin-right: 15px;
+    color: #000;
+    padding-top: 5px;
+    font-weight: bold;
+    /* .main-content h3, .main-content h3 a, .main-content .h3, .main-content .h3 a */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ooh-chart p, .ooh-chart blockquote {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    margin: 0 0 1em 0;
+    color: #333;
+}
+
+.ooh-chart p {
+    font-size: 0.75em;
+    padding: 0.5em;
+    text-align: center;
+    position: relative;
+    margin: 0px;
+}
+
+#panes p {
+    line-height: 1.7em;
+}
+
+
+@media (max-width: 767px) {
+    
+    .ooh-chart {
+        zoom: 0.8;
+    }
+    .ooh-chart {
+        float: none;
+    }
+    .ooh-chart * {
+        box-sizing: content-box;
+    }
+
+    .ooh-chart, .ooh-chart > div {
+        padding-left: 0px;
+    }
+    #panes .ooh-chart {
+        float: none !important;
+        padding: 10px 0 !important;
+    }
+}
