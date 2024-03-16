@@ -9,10 +9,10 @@
         <link rel="stylesheet" href="main.css">
         <script src="main.js"></script>
         <script src="page-nav.js"></script>
+        
+        <script src="js/ieee.js"></script>
 
         <link rel="stylesheet" href="results/ooh.css">
-        <link rel="stylesheet" href="results/resize.css">
-        
     </head>
     <body>
         <rules>
@@ -25,24 +25,24 @@
         <h1>Results</h1>
 	<h2>Software Development Definition</h2>
 		<h3>Types of Software</h3>
-			According to IBM there are 3 main types of software: system software, programming software, and application software. System software is software that provides core functions, this can include operating systems (OS), disk and other hardware management, etc. Programming software is software that enables the act of programming, these are tools that are necessary or helpful to the programming, debugging and other aspects of the software creation process. Application software are programs that help users with tasks, and many other things. This is the software that users primarily interact with besides the OS and websites. On phones these are normally referred to as Apps. There is a 4th type of software called embedded software which is software that controls devices that are not computers and smartphones. These devices might be stand-alone or part of the Internet of Things (IoT).
+			According to IBM there are 3 main types of software: system software, programming software, and application software. System software is software that provides core functions, this can include operating systems (OS), disk and other hardware management, etc. Programming software is software that enables the act of programming, these are tools that are necessary or helpful to the programming, debugging and other aspects of the software creation process. Application software are programs that help users with tasks, and many other things. This is the software that users primarily interact with besides the OS and websites. On phones these are normally referred to as Apps. There is a 4th type of software called embedded software which is software that controls devices that are not computers and smartphones. These devices might be stand-alone or part of the Internet of Things (IoT) [1].
 		<h3>Types of Software Development </h3>
-There are primarily three job titles that engage in software development (SD). The first type normally thought of are programmers, also known as coders. This job primarily writes source code to perform specific tasks by interpreting instructions from software developers/engineers. This is the Job that is most likely to be automated by Artificial Intelligence (AI). Generative AI such as ChatGPT can already do this to a degree.
-Software engineers design not only software but systems to solve problems. They do this using engineering principles and the scientific method. They must coordinate with the mechanical and electrical engineers to make sure that everything works together [1]. This Job may require certification in some states [3].
-Software developers on the other hand, fit right in between these two jobs, less formal than software engineers, but have more responsibility than programmers. They can write source code at times and also be in charge of the entire software development lifecycle (see more about life cycle here).
-		<h3>SD vs SE</h3>
-			The difference between a software developer and a software engineer can be confusing. Some companies might even interchange the titles or have their own meaning for them. The main difference between software developer and engineer is focus. 
-A software developer focuses more on the user experience and the design that that entails. This does not mean they only work on the user interface, but everything that could impact the user experience. A lot of the time they work directly with clients to find out what they want and present designs for approval before moving forward with the development process.
-			Software engineers on the other hand create software to perform specific tasks and functions. These could be used by many different applications. They do this rigorously using the scientific method.
+<p>There are primarily three job titles that engage in software development (SD). The first type normally thought of are programmers, also known as coders. This job primarily writes source code to perform specific tasks by interpreting instructions from software developers/engineers [1]. This is the Job that is most likely to be automated by Artificial Intelligence (AI). Generative AI such as ChatGPT can already do this to a degree.
+<p>Software engineers design not only software but systems to solve problems. They do this using engineering principles and the scientific method. They must coordinate with the mechanical and electrical engineers to make sure that everything works together [1]. This Job may require certification in some states [3].
+    <p>Software developers on the other hand, fit right in between these two jobs, less formal than software engineers, but have more responsibility than programmers. They can write source code at times and also be in charge of the entire software development lifecycle (see more about life cycle here) [1].
+		<h3>Software Developer vs. Software Engineer</h3>
+        <p>The difference between a software developer and a software engineer can be confusing. Some companies might even interchange the titles or have their own meaning for them. The main difference between software developer and engineer is focus.</p>
+            <p>A software developer focuses more on the user experience and the design that that entails. This does not mean they only work on the user interface, but everything that could impact the user experience. A lot of the time they work directly with clients to find out what they want and present designs for approval before moving forward with the development process [1].</p>
+                <p>Software engineers on the other hand create software to perform specific tasks and functions. These could be used by many different applications. They do this rigorously using the scientific method [1].</p>
 
 	<h2>Resume</h2>
 		<h3>Resume Summary vs. Resume Objective</h3>
-			A resume summary summarizes your job experience highlighting your qualities and skills. It’s a way to quickly present how you can be an asset. A resume objective on the other hand highlights your short-term career goals, while explaining why you are looking for employment. The main reason you would use a resume objective over a summary is if you are new to the job market or new to this career. 
+			A resume summary summarizes your job experience highlighting your qualities and skills. It’s a way to quickly present how you can be an asset [5]. A resume objective on the other hand highlights your short-term career goals, while explaining why you are looking for employment. The main reason you would use a resume objective over a summary is if you are new to the job market or new to this career [6]. 
 		<h3>Work History Formatting</h3>
-			The most normal way to format work history is to list your jobs in reverse chronological order (most recent first). You start with the company’s name and location. The location does not need to be the full address. And on the next line the dates you worked at that company overall. Followed each title you held at that company with a list of important responsibilities and accomplishments.
-	<h2>Hard Data About SD Job</h2>
-    <figure>
-        <figcaption>Figure Res-1: Software Developer pay breakdown by industries worked for [#]</figcaption>
+			The most normal way to format work history is to list your jobs in reverse chronological order (most recent first). You start with the company’s name and location. The location does not need to be the full address. And on the next line the dates you worked at that company overall. Followed each title you held at that company with a list of important responsibilities and accomplishments [7].
+	<h2>Statistics about a Software Developer Career</h2>
+    <figure id="fig-res-1">
+        <figcaption>Figure Res-1: Software Developer pay breakdown by industries worked for [2]</figcaption>
         <table class="ooh-tab-table">
             <tbody>
                 <tr class="odd">
@@ -79,11 +79,12 @@ A software developer focuses more on the user experience and the design that tha
         </table>
     </figure>
 		<h3>Salary</h3>
-			In 2022 the median yearly wage for a software developer was $127,260, with the range being from $71,280 to $198,100. See figure Res-1 for a breakdown by industries worked for from the US Bureau of Labor Statistics. From this figure we can see that those working for software publishers have higher pay.
-            <figure style="clear: both; width: fit-content;">
-                <figcaption>Figure Res-2:</figcaption>
-                <div class="resize-container">
-                <div class="resize-content">
+			In 2022 the median yearly wage for a software developer was $127,260, with the range being from $71,280 to $198,100 [2]. See figure Res-1 for a breakdown by industries worked for from the US Bureau of Labor Statistics. From this figure we can see that those working for software publishers have higher pay.
+            <figure id="fig-res-2" style="clear: right;">
+                <figcaption>Figure Res-2: Percent change in employment, projected 2022-32 [2]</figcaption>
+                <details>
+                    <summary>Click to view</summary>    
+                
 <div class="ooh-chart" style="padding: 0;margin: 0;padding-left: 15px;float: right;background-color: #fff;">
     <div style="min-height: 388.34999999999997px;padding: 0;margin: 0;width: 440px;height: auto;border: 1px solid #ccc;font-family: Helvetica, Arial, sans-serif;padding-left: 15px;font-size: 120% !important;">
         <h3 style="padding: 0;margin: 0;text-align: center;font-size: 18px;border-bottom: none;margin-right: 15px;color: #000;padding-top: 5px;font-weight: bold;"> Software Developers, Quality Assurance Analysts, and Testers</h3>
@@ -174,17 +175,19 @@ A software developer focuses more on the user experience and the design that tha
             Economy.<br style="padding: 0;margin: 0;">Source: U.S. Bureau of Labor Statistics, Employment Projections program</p>
     </div>
 </div>
-</div>
-</div>
+</details>
             </figure>
 		<h3> Job Outlook Over Time</h3>
-			The future is bright for software developers as the demand for software development jobs is projected to increase 26% over the 10 years from 2023-2032. [#] This data from the U.S. Bureau of Labor Statistics can be seen in Figure’s Res-2 and Res-3. 
+			The future is bright for software developers as the demand for software development jobs is projected to increase 26% over the 10 years from 2023-2032 [2]. This data from the U.S. Bureau of Labor Statistics can be seen in Figure’s Res-2 and Res-3. 
 			
 
                 
             
-            <figure>
-                <figcaption>Figure Res-3: </figcaption>
+            <figure id="fig-res-3"  style="clear: right;">
+                <figcaption>Figure Res-3: Employment projections 2022-32 [2]</figcaption>
+                <details>
+                <summary>Click to view</summary>
+                
                 <table class="regular" id="outlook-table" style="padding: 0;margin: 1em 0;font-size: inherit;font: 100%;width: auto !important;background-color: #fff;border: 1px solid #aaa;font-family: tahoma, arial, sans-serif;border-collapse: collapse;empty-cells: show;">
                     <caption style="padding: 0;margin: 0;text-align: left;padding-bottom: 2px;margin-bottom: 0;color: #660000;"><span class="tableTitle" style="padding: 0;margin: 0;font-size: 112%;font-weight: bold;">    Employment projections data for     software developers, quality assurance analysts, and testers, 2022-32</span></caption>
                 <thead style="padding: 0;margin: 0;">
@@ -274,8 +277,9 @@ A software developer focuses more on the user experience and the design that tha
                 
                 </tbody>
                 </table>
+                </details>
             </figure>
-            <script src="results/resize.js"></script>
+        <!-- <script>LinkCitations()</script> -->
     </body>
     
 </html>
