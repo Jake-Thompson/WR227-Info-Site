@@ -45,6 +45,7 @@ display: flex; justify-content: space-between;
 header {
     position: sticky;
     top: 0px;
+    z-index: 1;
 }
 .title {
     padding: 10px;
