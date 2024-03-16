@@ -1,0 +1,9 @@
+https://www.bls.gov/siteimproveanalytics.com/js/siteanalyze_6032860.js
+https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOL&amp;subagency=BLS&amp;yt=true
+https://www.bls.gov/javascripts/jquery-latest.js
+https://www.bls.gov/javascripts/bls-latest.js
+https://www.bls.gov/javascripts/jquery-tools.js
+https://www.bls.gov/javascripts/jquery-migrate-1.2.1.min.js
+https://www.bls.gov/assets/bootstrap/latest/popper.min.js
+https://www.bls.gov/assets/bootstrap/latest/bootstrap.min.js
+https://www.bls.gov/javascripts/jquery.dataTables.min.js

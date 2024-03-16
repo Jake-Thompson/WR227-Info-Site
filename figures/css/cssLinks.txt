@@ -1,0 +1,9 @@
+https://www.bls.gov/stylesheets/bootstrap.min.css
+https://www.bls.gov/stylesheets/bls_combined.css
+https://www.bls.gov/stylesheets/bls_content.css
+https://www.bls.gov/stylesheets/bls_tables.css
+https://www.bls.gov/stylesheets/jquery-tools.css
+https://www.bls.gov/stylesheets/bls_nr.css
+https://www.bls.gov/stylesheets/bls_noscript.css
+https://www.bls.gov/stylesheets/datatable.css
+https://www.bls.gov/stylesheets/bls_ooh.css
