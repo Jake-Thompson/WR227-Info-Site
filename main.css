@@ -142,3 +142,68 @@ figcaption {
                 padding-bottom: 5px;
                 margin-bottom: 5px;
 }
+
+.doc {
+    --doc-size: 25vw;
+    min-width: 100px;
+    min-height: 100px;
+    height: var(--doc-size);
+    width: var(--doc-size);
+    border: 1px solid darkred;
+    padding: 1vw;
+    overflow:hidden;
+    /* user-select: none; */
+}
+
+.doc .wrap {
+    position: absolute;
+    min-width: 100px;
+    min-height: 100px;
+    height: var(--doc-size);
+    width: var(--doc-size);
+    display: block;
+    /* border: 1px solid darkred; */
+    padding: 0; 
+    overflow:hidden;
+}
+
+.doc .wrap::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 1;
+    background-color: transparent;
+
+}
+
+.doc > div {
+    height: 100%;
+    clip-path:margin-box;
+    overflow:hidden;
+    
+}
+
+.doc h3 {
+    margin: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid darkred;
+}
+.doc iframe {
+    width: 200%;
+    height: 200%;
+    transform: scale(0.5);
+    transform-origin: 0 0;
+}
+.doc:hover {
+    /* border-style:outset; */
+    box-shadow: 0px 0px 5px red;
+} 
+a:has(> .doc) {
+    text-decoration: none;
+    color: unset;
+}
+div.docs {
+    display: flex; justify-content: space-around;
+}
